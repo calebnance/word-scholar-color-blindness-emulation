@@ -2,9 +2,11 @@
   --richBlack: #161925;
   --black20: rgba(0, 0, 0, 0.2);
   --paleSilver: #bfb5af;
+  --isabelline: #f6f0ed;
   --maximumYellowRed: #ffce70;
   --russianGreen: #69995d;
   --eggplant: #714955;
+  --white: #ffffff;
 }
 
 @font-face {
@@ -35,9 +37,9 @@ body {
 }
 
 section {
-  background-color: #f6f0ed;
+  background-color: var(--isabelline);
   border: 1px solid var(--richBlack);
-  border-radius: 20px;
+  border-radius: 4px;
   flex: 1;
   margin-bottom: 16px;
   padding: 16px;
@@ -46,6 +48,10 @@ section {
 h1,
 h2 {
   margin: 0 0 16px 0;
+}
+
+h3 {
+  margin: 16px 0 8px 0;
 }
 
 img {
@@ -57,7 +63,7 @@ img {
 
 .header {
   align-items: center;
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--eggplant);
   display: inline-flex;
   font-family: "Rubik-Bold";
@@ -69,7 +75,7 @@ img {
 
 .header span {
   font-family: "Rubik-Light";
-  margin: 2px 0 0 4px;
+  margin: 1px 0 0 4px;
 }
 
 .description {
@@ -78,7 +84,7 @@ img {
 }
 
 .letters {
-  padding: 16px 0 0;
+  padding: 0 0 16px 0;
 }
 
 .letter {
