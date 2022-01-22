@@ -1,0 +1,151 @@
+:root {
+  --richBlack: #161925;
+  --black20: rgba(0, 0, 0, 0.2);
+  --paleSilver: #bfb5af;
+  --maximumYellowRed: #ffce70;
+  --russianGreen: #69995d;
+  --eggplant: #714955;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik-Regular";
+  src: url("rubik-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik-Bold";
+  src: url("rubik-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik-Light";
+  src: url("rubik-light.woff2") format("woff2");
+}
+
+body {
+  font-family: "Rubik-Regular";
+}
+
+.row {
+  display: flex;
+  column-gap: 16px;
+}
+
+section {
+  background-color: #f6f0ed;
+  border: 1px solid var(--richBlack);
+  border-radius: 20px;
+  flex: 1;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+h1,
+h2 {
+  margin: 0 0 16px 0;
+}
+
+img {
+  border: 4px solid var(--richBlack);
+  border-radius: 16px;
+  margin-right: 8px;
+  width: 180px;
+}
+
+.header {
+  align-items: center;
+  color: #ffffff;
+  background-color: var(--eggplant);
+  display: inline-flex;
+  font-family: "Rubik-Bold";
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.header span {
+  font-family: "Rubik-Light";
+  margin: 2px 0 0 4px;
+}
+
+.description {
+  /* background-color: red; */
+  height: 48px;
+}
+
+.letters {
+  padding: 16px 0 0;
+}
+
+.letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  height: 48px;
+  width: 48px;
+  color: var(--richBlack);
+  font-size: 22px;
+  text-transform: "uppercase";
+}
+
+.green {
+  background-color: var(--russianGreen);
+  border-color: var(--black20);
+}
+
+.yellow {
+  background-color: var(--maximumYellowRed);
+  border-color: var(--black20);
+  border-style: dashed;
+}
+
+.grey {
+  background-color: var(--paleSilver);
+}
+
+.protanopia {
+  -webkit-filter: url("filters.svg#protanopia");
+  filter: url("filters.svg#protanopia");
+}
+
+.protanomaly {
+  -webkit-filter: url("filters.svg#protanomaly");
+  filter: url("filters.svg#protanomaly");
+}
+
+.deuteranopia {
+  -webkit-filter: url("filters.svg#deuteranopia");
+  filter: url("filters.svg#deuteranopia");
+}
+
+.deuteranomaly {
+  -webkit-filter: url("filters.svg#deuteranomaly");
+  filter: url("filters.svg#deuteranomaly");
+}
+
+.tritanopia {
+  -webkit-filter: url("filters.svg#tritanopia");
+  filter: url("filters.svg#tritanopia");
+}
+
+.tritanomaly {
+  -webkit-filter: url("filters.svg#tritanomaly");
+  filter: url("filters.svg#tritanomaly");
+}
+
+.achromatopsia {
+  -webkit-filter: url("filters.svg#achromatopsia");
+  filter: url("filters.svg#achromatopsia");
+}
+
+.achromatomaly {
+  -webkit-filter: url("filters.svg#achromatomaly");
+  filter: url("filters.svg#achromatomaly");
+}

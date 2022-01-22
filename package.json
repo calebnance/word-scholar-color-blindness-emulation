@@ -1,0 +1,15 @@
+{
+  "name": "word-scholar-color-blindness-emulation",
+  "version": "1.0.0",
+  "description": "Word Scholar Native App color blindness emulation",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ./",
+    "help": "serve --help"
+  },
+  "author": "hail2u and Caleb Nance",
+  "license": "CC0",
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}
